@@ -17,6 +17,8 @@
 # it may happen that the input string have leading, trailing whitespaces and more than a unique whitespace between two consecutive numbers
 # Don't modify the input
 # For C: The result is freed.
+
+
 from functools import reduce
 
 def order_weight(strng):
@@ -40,7 +42,6 @@ def order_weight(strng):
     sortedStr += str(arr[1]) + " "
 
   sortedStr = sortedStr.rstrip()
-  print(len(sortedStr))
   return sortedStr
 
 print(order_weight("2000 10003 1234000 44444444 9999 11 11 22 123"))
